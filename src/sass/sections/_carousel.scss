@@ -1,0 +1,14 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.slide-track{
+    display: flex !important;
+    transform: none !important;
+}
+
+.slick-slide{
+    width:400px !important;
+}

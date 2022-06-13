@@ -1,0 +1,100 @@
+.community {
+    padding-top: 4rem;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+    .container {
+      display: grid;
+      //grid-template-columns: 1fr 1fr;
+      font-size: 18px;
+      justify-content: center;
+      align-items: center;
+      .content {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        .title {
+            font-family: Hanson, sans-serif;
+            color: #fff;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-shadow: 0 0 12px rgb(217 216 218 / 80%);
+        }
+        .description {
+            font-family: Hanson, sans-serif;
+            color: #fff;
+        }
+        .join-discord{
+            background: transparent;
+            border-radius: 16px;
+            color: #fff;
+            font-family: Hanson, sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 16px 72px;
+            text-transform: uppercase;
+            border: 1px solid #fff;
+            transition: all .5s ease;
+            margin: 5vh 0;
+            z-index: 2;
+            text-decoration: none;
+        }
+        .join-discord:hover{
+            color: black;
+            background-color: #fff;
+            text-shadow: 0 0 12px rgb(217 216 218 / 80%);
+            cursor: pointer;
+            text-decoration: none;
+            transition: all .5s ease;
+            box-shadow: 0 0 12px rgb(217 216 218 / 80%);
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 412px) and (max-width: 1080px) {
+    .community {
+      padding: 1rem;
+      position: relative;
+      overflow-x: hidden;
+      margin-top: 1rem;
+      justify-content: center;
+      align-items: center;
+      .container {
+        font-size: 16px;
+        grid-template-columns: 0.7fr;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  @media screen and (min-width: 375px) and (max-width: 412px) {
+    .community {
+      padding: 1rem;
+      position: relative;
+      overflow-x: hidden;
+      margin-top: 1rem;
+      justify-content: center;
+      align-items: center;
+      .container {
+        font-size: 16px;
+        grid-template-columns: 0.7fr;
+        justify-content: center;
+        align-items: center;
+      }
+      .title{
+        font-size: 18px;
+      }
+      .description{
+        font-size: 15px;
+      }
+      .join-discord{
+        font-size: 13px !important;
+      }
+      a{
+        font-size: 13px;
+      }
+    }
+  }
